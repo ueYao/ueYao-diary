@@ -29,10 +29,10 @@ public class Diary implements Serializable {
     @Column(name = "content", columnDefinition = "text not null comment '内容'")
     private String content;
     /**
-     * 选择时间
+     * 选择日期
      */
-    @Column(name = "change_time", columnDefinition = "datetime default current_timestamp comment '选择时间'")
-    private LocalDateTime changeTime;
+    @Column(name = "change_date", columnDefinition = "varchar default '' comment '选择日期'")
+    private String changeDate;
     /**
      * 创建者
      */

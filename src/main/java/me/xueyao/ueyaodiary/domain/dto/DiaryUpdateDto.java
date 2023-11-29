@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 
 /**
  * 日记内容
@@ -25,10 +24,10 @@ public class DiaryUpdateDto implements Serializable {
     @ApiModelProperty(value = "日记内容")
     private String content;
     /**
-     * 选择时间
+     * 选择日期
      */
-    @ApiModelProperty(value = "选择时间")
-    private LocalDateTime changeTime;
+    @ApiModelProperty(value = "选择日期")
+    private String changeDate;
 
     /**
      * 是否隐藏

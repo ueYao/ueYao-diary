@@ -23,9 +23,9 @@ public class DiaryVo implements Serializable {
      */
     private String content;
     /**
-     * 选择时间
+     * 选择日期
      */
-    private LocalDateTime changeTime;
+    private String changeDate;
     /**
      * 创建者
      */
