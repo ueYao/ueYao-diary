@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.0</version>
+        <version>2.6.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>me.xueyao</groupId>
@@ -14,7 +14,7 @@
     <name>ueYao-diary</name>
     <description>ueYao-diary</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>1.8</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -31,21 +31,48 @@
         </dependency>
 
         <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>edge-SNAPSHOT</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.23</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.78</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <!--在引用时请在maven中央仓库搜索3.X最新版本号-->
+            <version>3.0.3</version>
+        </dependency>
+
     </dependencies>
+    <repositories>
+        <repository>
+            <id>projectlombok.org</id>
+            <url>https://projectlombok.org/edge-releases</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
